@@ -1,0 +1,37 @@
+public class ArmstrongExample {
+
+    
+    public static void main(String[] args) {
+        // TODO code application logic hereint c=0,a,temp;  
+             for (int n=10; n <1000000; n++){
+            int sum = 0;
+
+            int number =n;
+
+            int original = number;
+
+            while(number>0){
+
+                int t= number%10;
+
+                sum += t*t*t*t*t;
+             number = number/10;
+
+          }
+
+            if (sum == original) {
+
+                System.out.println(original);
+
+            }
+
+        }
+
+   }  
+    
+    
+}
+
+
+
+
